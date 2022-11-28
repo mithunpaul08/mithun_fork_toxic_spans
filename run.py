@@ -6,6 +6,7 @@ taking a sentence as command line argument
 import spacy
 import sys
 import argparse
+import scripts.evaluate_char
 
 
 def run(s: str, spans_key='sc', model_reference='training/model-best'):
