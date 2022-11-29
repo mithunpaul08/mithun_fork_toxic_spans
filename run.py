@@ -47,7 +47,7 @@ def run(s: str, spans_key='sc', model_reference='training/model-best'):
 
 
 if __name__ == '__main__':
-    spans_key = 'txs'
+    spans_key = 'sc'
 
     parser = argparse.ArgumentParser(description='Detect toxic language in text.')
     parser.add_argument('--model', type=str, dest='model_reference',

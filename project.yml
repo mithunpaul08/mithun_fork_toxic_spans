@@ -6,7 +6,7 @@ vars:
   config: "config"
   gpu: -1
   lang: "id"
-  spans_key: "txs"
+  spans_key: "sc"
   code: "scripts/evaluate_char.py"
   package_name: "toxic_detector"
   package_version: "1.0.0"
@@ -36,7 +36,7 @@ commands:
   - name: corpus
     help: "Convert the data to spaCy's format"
     script:
-      - "python scripts/make_corpus.py"
+      - " prodigy data-to-spacy ./corpus --spancat enron_reloading_nov3rd2022_extraction_nov22nd --verbose"
     deps:
       - "scripts/make_corpus.py"
       - "assets/tsd_train.csv"
