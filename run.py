@@ -19,9 +19,9 @@ def run(s: str, spans_key='sc', model_reference='training/model-best'):
     doc = nlp(s)
     spans = doc.spans[spans_key]
     if not spans:
-        print('No toxic spans found in: ', s)
+        print('No  spans found in: ', s)
     else:
-        print('Toxic span(s):')
+        print(' span(s):')
         spanlst = []
         for span in spans:
             t = (span.start, span.end, span.label_)
